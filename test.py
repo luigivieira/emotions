@@ -233,9 +233,6 @@ def main(argv):
         frameCount = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
         sourceName = args.file
 
-        fourcc = cv2.VideoWriter_fourcc(*'XVID')
-        out = cv2.VideoWriter('c:/temp/sopt/teste.mp4', fourcc, fps, (1280, 720))
-
     # Force HD resolution (if the video was not recorded in this resolution or
     # if the camera does not support it, the frames will be stretched to fit it)
     # The intention is just to standardize the input (and make the help window
@@ -277,7 +274,6 @@ def main(argv):
         data.draw(frame)
 
         cv2.imshow(sourceName, frame)
-        out.write(frame)
 
         if paused:
             key = cv2.waitKey(0)
@@ -324,7 +320,6 @@ def main(argv):
             frameNum += 1
 
     video.release()
-    out.release()
     cv2.destroyAllWindows()
 
 #---------------------------------------------
