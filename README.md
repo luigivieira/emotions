@@ -4,6 +4,7 @@ A simple detector of prototypic emotions from facial images captured in video, w
 This project works by first detecting a face in each frame of a video. The face region and the landmark coordinates found and then used to detect the probabilities of each prototypic emotion (happiness, sadness, anger, fear, surprise and disgust, plus the neutral expression).
 
 [![Video with a test of this project](https://img.youtube.com/vi/uDRYr0CWSwI/0.jpg)](https://youtu.be/uDRYr0CWSwI)
+(Click on this image to see a video with a test of this project - the original video uses is called "Human Emotions" and it was used with the kind authorization from the folks of the Imagine Pictures video production company (thank you guys!). Original URL of the video: [https://www.youtube.com/watch?v=UjZzdo2-LKE](https://www.youtube.com/watch?v=UjZzdo2-LKE))
 
 ## Details on the Implementation
 
