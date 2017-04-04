@@ -3,6 +3,8 @@ A simple detector of prototypic emotions from facial images captured in video, w
 
 This project works by first detecting a face in each frame of a video. The face region and the landmark coordinates found and then used to detect the probabilities of each prototypic emotion (happiness, sadness, anger, fear, surprise and disgust, plus the neutral expression).
 
+[![Video with a test of this project](https://img.youtube.com/vi/uDRYr0CWSwI/0.jpg)](https://youtu.be/uDRYr0CWSwI)
+
 ## Details on the Implementation
 
 The face detection is based on a Cascade Detector (Viola-Jones algorithm). The facial landmarks are located by using a deformable model adjusted to the face region previously found with the Cascade. The code uses the implementation available from the dlib library. Its trained detector model is loaded from the folder `models`.
