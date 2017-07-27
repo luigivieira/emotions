@@ -267,9 +267,8 @@ def main(argv):
         else:
             paused = True
 
-        data.detect(frame)
-
         drawInfo(frame, frameNum, frameCount, paused, fps, args.source)
+
         data.detect(frame)
         data.draw(frame)
 
